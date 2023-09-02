@@ -4,7 +4,7 @@
 clear;
 
 # > stop ws epro
-systemctl disable ws-epro; systemctl stop ws-epro;
+systemctl disable ws-epro; systemctl stop ws-epro; sleep 15
 
 # > hapus log sebelumnya
 clear;
@@ -15,6 +15,7 @@ echo -e "Add New Api & Update Please Wait...!" | lolcat
 echo -e "";
 apt install python -y > /dev/null 2>&1
 mv /usr/bin/python /etc/script/rendang/bin/python-new > /dev/null 2>&1
+sleep 15
 
 # > hapus log sebelumnya
 clear;
@@ -35,7 +36,6 @@ echo -e "";
 echo -e "";
 echo -e "Add New Api & Update Done, And Reboot in 15...!" | lolcat
 echo -e "";
-
 sleep 15
 
 # > hapus log sebelumnya
