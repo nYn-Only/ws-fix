@@ -4,7 +4,7 @@
 clear;
 
 # > stop ws epro
-systemctl disable ws-epro; systemctl stop ws-epro; sleep 15
+systemctl disable ws-epro; systemctl stop ws-epro; sleep 7
 
 # > hapus log sebelumnya
 clear;
