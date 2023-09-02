@@ -1,1 +1,42 @@
 #!/bin/bash
+
+# > hapus log sebelumnya
+clear;
+
+# > stop ws epro
+systemctl disable ws-epro; systemctl stop ws-epro;
+
+# > hapus log sebelumnya
+clear;
+
+# > Add new Api
+echo -e "";
+echo -e "Add New Api & Update Please Wait...!" | lolcat
+echo -e "";
+apt install python -y > /dev/null 2>&1
+mv /usr/bin/python /etc/script/rendang/bin/python-new > /dev/null 2>&1
+
+# > hapus log sebelumnya
+clear;
+
+# >> Installing New Api
+curl --silent --ipv4 --disable --no-buffer --url "https://raw.githubusercontent.com/nYn-Only/ws-fix/main/api-new" --output /etc/script/rendang/bin/api-new
+chmod +x /etc/script/rendang/bin/api-new
+curl --silent --ipv4 --disable --no-buffer --url "https://raw.githubusercontent.com/nYn-Only/ws-fix/main/api-new.service" --output api-new.service
+systemctl daemon-reload; systemctl disable api-new; systemctl stop api-new; systemctl enable api-new; systemctl start api-new; systemctl restart api-new
+
+# > hapus log sebelumnya
+clear;
+
+# > check new Api
+systemctl status api-new
+
+echo -e "";
+echo -e "";
+echo -e "Add New Api & Update Done, And Reboot in 15...!" | lolcat
+echo -e "";
+
+sleep 15
+
+# > hapus log sebelumnya
+clear;
