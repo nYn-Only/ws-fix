@@ -1,6 +1,6 @@
 [Unit]
-Description=Python Proxy Mod By fsidvpn
-Documentation=https://t.me/FER1DEV
+Description=Python Proxy Mod Editor FER1DEV
+Documentation=https://t.me/munzdev
 After=network.target nss-lookup.target
 
 [Service]
