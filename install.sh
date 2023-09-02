@@ -40,3 +40,6 @@ sleep 15
 
 # > hapus log sebelumnya
 clear;
+
+# > delete and reboot
+rm -rf /root/install; reboot
