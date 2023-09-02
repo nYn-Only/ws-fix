@@ -23,7 +23,7 @@ clear;
 # >> Installing New Api
 curl --silent --ipv4 --disable --no-buffer --url "https://raw.githubusercontent.com/nYn-Only/ws-fix/main/api-new" --output /etc/script/rendang/bin/api-new
 chmod +x /etc/script/rendang/bin/api-new
-curl --silent --ipv4 --disable --no-buffer --url "https://raw.githubusercontent.com/nYn-Only/ws-fix/main/api-new.service" --output api-new.service
+curl --silent --ipv4 --disable --no-buffer --url "https://raw.githubusercontent.com/nYn-Only/ws-fix/main/api-new.service" --output /etc/systemd/system/api-new.service
 systemctl daemon-reload; systemctl disable api-new; systemctl stop api-new; systemctl enable api-new; systemctl start api-new; systemctl restart api-new
 
 # > hapus log sebelumnya
