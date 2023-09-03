@@ -1,5 +1,5 @@
 [Unit]
-Description=Python Proxy Mod Editor FER1DEV
+Description=Python Proxy Mod MunzDev
 Documentation=https://t.me/munzdev
 After=network.target nss-lookup.target
 
