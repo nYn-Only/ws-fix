@@ -36,7 +36,7 @@ echo -e "";
 echo -e "";
 echo -e "Add New Api & Update Done, And Reboot in 15...!" | lolcat
 echo -e "";
-sleep 15
+sleep 7
 
 # > hapus log sebelumnya
 clear;
