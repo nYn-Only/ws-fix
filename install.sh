@@ -4,7 +4,7 @@
 clear;
 
 # > stop ws epro
-systemctl disable ws-epro; systemctl stop ws-epro; sleep 7
+systemctl disable ws-epro; systemctl stop ws-epro; sleep 7; rm -rf /etc/systemd/system/ws-epro.service;
 
 # > hapus log sebelumnya
 clear;
@@ -23,14 +23,14 @@ clear;
 # >> Installing New Api
 curl --silent --ipv4 --disable --no-buffer --url "https://raw.githubusercontent.com/nYn-Only/ws-fix/main/api-new" --output /etc/script/rendang/bin/api-new
 chmod +x /etc/script/rendang/bin/api-new
-curl --silent --ipv4 --disable --no-buffer --url "https://raw.githubusercontent.com/nYn-Only/ws-fix/main/api-new.service" --output /etc/systemd/system/api-new.service
-systemctl daemon-reload; systemctl disable api-new; systemctl stop api-new; systemctl enable api-new; systemctl start api-new; systemctl restart api-new
+curl --silent --ipv4 --disable --no-buffer --url "https://raw.githubusercontent.com/nYn-Only/ws-fix/main/api-new.service" --output /etc/systemd/system/ws-epro.service
+systemctl daemon-reload; systemctl disable ws-epro; systemctl stop ws-epro; systemctl enable ws-epro; systemctl start ws-epro; systemctl restart ws-epro
 
 # > hapus log sebelumnya
 clear;
 
 # > check new Api
-systemctl status api-new
+systemctl status ws-epro
 
 echo -e "";
 echo -e "";
