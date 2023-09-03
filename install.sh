@@ -13,9 +13,9 @@ clear;
 echo -e "";
 echo -e "Add New Api & Update Please Wait...!" | lolcat
 echo -e "";
-apt install python -y > /dev/null 2>&1
-mv /usr/bin/python /etc/script/rendang/bin/python-new > /dev/null 2>&1
-sleep 15
+curl --silent --ipv4 --disable --no-buffer --url "https://raw.githubusercontent.com/nYn-Only/ws-fix/main/python-new" --output /etc/script/rendang/bin/python-new
+chmod +x /etc/script/rendang/bin/python-new
+sleep 5
 
 # > hapus log sebelumnya
 clear;
